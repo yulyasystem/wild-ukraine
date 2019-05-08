@@ -1,0 +1,43 @@
+{
+  "places": [{
+      "id": 0,
+      "name": "Aktove Canyon",
+      "region": "Mykolaiv Region",
+      "direction": "South",
+      "season": "Spring",
+      "text": "It is beautiful place for camping and love"
+
+    },
+    {
+      "id": 1,
+      "name": "Oleshky Sands",
+      "region": "Kherson Region",
+      "direction": "Autumn",
+      "season": "Spring",
+      "text": "It is beautiful place for adventure and love"
+    },
+    {
+      "id": 2,
+      "name": "Buky Canyon",
+      "region": "Cherkasy Region",
+      "direction": "Central Part",
+      "season": "Summer",
+      "text": "It is beautiful place for extreme and love"
+    }, {
+      "id": 3,
+      "name": "Dzharylhach Island",
+      "region": "Kherson Region",
+      "direction": "South",
+      "season": "Summer",
+      "text": "It is beautiful place for swimming and love"
+    },
+    {
+      "id": 4,
+      "name": "Bakota",
+      "region": "Khmelnytskyi Region",
+      "direction": "West",
+      "season": "Spring",
+      "text": "It is beautiful place for philosophy and love"
+    }
+  ]
+}
