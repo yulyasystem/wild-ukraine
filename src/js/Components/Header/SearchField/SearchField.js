@@ -1,5 +1,6 @@
 import React from "react";
 import {SearchItem} from "./SearchItem";
+import {SearchButton} from "./SearchButton";
 
 export default class SearchField extends React.Component {
   constructor(props){
@@ -36,8 +37,8 @@ export default class SearchField extends React.Component {
             { value: 'All',id:10},
 
           ]} />                                                                                                                                                                       
-{console.log(this.state.selectedItem,"here in state!")}
-      </div>
+        <SearchButton title ="Search Places"/>
+      </div>  
           
     );
   }

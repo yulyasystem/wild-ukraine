@@ -16,7 +16,7 @@ export default class SearchItem extends React.Component {
   
   dropDown() {
     this.setState(previousState => ({
-      showItems: !previousState.showItems
+      showItems: !previousState.showItems 
     }))
 
   }
@@ -47,18 +47,15 @@ export default class SearchItem extends React.Component {
         <div style={{display:this.state.showItems?'block':'none'}}
         className="search-item--dropdown-container "
         >
-          {
+          {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
             this.state.items.map(item=><div key={item.id}
             onClick = {()=>{
               this.selectItem(item);
-              this.props.updateData(this.state.selectedItem.value);
-              console.log(this.state.selectedItem, "selected");
-              
-              
+              this.props.updateData(item.value);
               }}
               
-            className = {
-              this.setState.selectItem === item ? 'selected' : ''
+            className = {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+              this.state.selectedItem === item ? 'selected' : ''
             }
             
             >
@@ -66,7 +63,6 @@ export default class SearchItem extends React.Component {
             </div>
             )
           }
-       
         </div>
 
       </div>
@@ -74,35 +70,3 @@ export default class SearchItem extends React.Component {
   }
 }
 
-
-
-
-
-{/* <div className="select-field--box">
-      <div className="select-field--container">
-      <div
-        className="select-filed--selected-item"
-        >
-          {this.state.selectedItem.value}
-        </div>
-        <div
-        className="select-field--arrow"
-        onClick ={this.dropDown}
-        >
-          <span className={`${this.state.showItems ? 'select-field--arrow-up':'select-field--arrow-down'}`}></span>
-        </div>
-        <div style={{display:this.state.showItems?'block':'none'}}
-        className="select-field--item "
-        >
-          {
-            this.state.items.map(item => <div 
-            key={item.id}
-            onClick = {()=>this.selectItem(item)}
-            className = {this.setState.selectItem===item ?'selected':''}
-            >
-              {item.value}
-            </div>)
-          }
-        </div>
-      </div>
-   </div> */}
