@@ -1,0 +1,131 @@
+.header-wrapper {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/header-background.png);
+  background-size: cover;
+}
+
+.about-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: 5px;
+}
+
+.about-link:visited {
+  color: white;
+}
+
+.heading-wrapper {
+  margin-top: 180px;
+}
+
+.heading-upper {
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.heading-down {
+  font-weight: 900;
+  margin-top: 4rem;
+  font-size: 110px;
+}
+
+.main-wrapper {
+  align-items: center;
+  max-width: 620px;
+  width: 100%;
+  min-width: 150px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+// SEARCH FIELD
+.search-field{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top:10px;
+  
+}
+
+.search-item--heading {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.search-item--selected-item {
+  font-size: 20px;
+}
+
+.search-item--arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  color: #aaa;
+}
+
+.search-item--arrow-down {
+  margin-left: 150px;
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+
+// .search-item--arrow-down::after {
+//   content: url(../assets/arrow.svg);
+//   transform: rotateY(90deg);
+// }
+
+.search-item--arrow-up {
+  margin-left: 150px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+
+
+}
+
+// .search-item--arrow-up::after {
+//   content: url(../assets/arrow.svg);
+// }
+
+
+
+.search-item--dropdown-container {
+  background-color: rgba($color: #291b1b, $alpha: 1.0);
+  background: #000;
+  cursor: pointer;
+  display: inline-block;
+  background: transparent;
+  height: 100%;
+  width: 25%;
+  
+  
+
+}
+
+.search-item--dropdown-container div {
+  padding: 6px;
+  padding-left: 20px;
+
+}
+
+.search-item--dropdown-container div:hover {
+  background-color: rgba($color: #000000, $alpha: 0.2);
+}
+
+// .select-field--box{
+//   width: 100%;
+//   position: absolute;
+
+// }

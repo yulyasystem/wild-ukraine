@@ -2,22 +2,28 @@
   "name": "weather-app",
   "version": "1.0.0",
   "main": "./index.html",
-  "repository": "https://github.com/yulyasystem/weather-app.git",
+  "repository": "",
   "author": "yulyasystem <yulyasystem@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --out-dir docs --public-url ./",
-    "prebuild":"shx rm -rf dist/"
+    "prebuild": "shx rm -rf dist/"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.9",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "cssnano": "^4.1.10",
     "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.3",
     "sass": "^1.17.2",
     "shx": "^0.3.2"
   },
   "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "scss": "^0.2.4"
   }
 }
