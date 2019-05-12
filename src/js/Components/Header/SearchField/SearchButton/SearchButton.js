@@ -1,14 +1,23 @@
 import React from 'react';
+import {SearchResults} from '../../SearchResults';
+import {Router, Route, Link} from 'react-router-dom';
+import {createBrowserHistory} from 'history';
 
+const history = createBrowserHistory();
 
 export default class SearchButton extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
-  render(){
+  render() {
     return (
-      <div className="search-button--heading">
-        {this.props.title}
+      <div>
+        <div className="search-button--heading">
+          <Link to="/results">
+            {this.props.title}
+          </Link>
+        </div>
+        <Route exact path="/results" component={SearchResults}/>
       </div>
     );
   }

@@ -22,8 +22,10 @@
     "shx": "^0.3.2"
   },
   "dependencies": {
-    "react": "^16.8.6",
+    "react": ">=15",
     "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "scss": "^0.2.4"
   }
 }
