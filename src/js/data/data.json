@@ -5,7 +5,9 @@
       "region": "Mykolaiv Region",
       "direction": "South",
       "season": "Spring",
-      "text": "It is beautiful place for camping and love"
+      "text": "It is beautiful place for camping and love",
+      "class": "Aktove",
+      "image": "../../../assets/Aktove.png"
 
     },
     {

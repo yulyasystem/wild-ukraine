@@ -1,11 +1,10 @@
 import React from "react";
 
-
-export default class About extends React.Component{
-  constructor(props){
+export default class About extends React.Component {
+  constructor(props) {
     super(props);
   }
-  render(){
+  render() {
     return <a href="#" className="about-link">About</a>
   }
 }

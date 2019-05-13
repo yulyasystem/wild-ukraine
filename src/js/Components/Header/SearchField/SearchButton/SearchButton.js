@@ -12,13 +12,16 @@ export default class SearchButton extends React.Component {
   render() {
     return (
       <div>
-        <div className="search-button--heading">
-          <Link to="/results">
-            {this.props.title}
-          </Link>
+        <Router history={history}>
+          <div className="search-button--heading">
+            <Link to="/results">
+              {this.props.title}
+            </Link>
+            <Route path="/results" component={SearchResults}/>
+          </div>
+        </Router>
         </div>
-        <Route exact path="/results" component={SearchResults}/>
-      </div>
+      
     );
   }
 }

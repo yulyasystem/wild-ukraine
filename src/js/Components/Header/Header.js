@@ -12,20 +12,20 @@ export default class Header extends React.Component {
   }
   render() {
     return (
-      <Router history={history}>
-        <div className="header-wrapper">
-          <div className="container">
-            <div className="main-wrapper">
-              <About/>
-              <div className="heading-wrapper">
-                <h3 className="heading-upper">EXPLORE THE WILD</h3>
-                <h1 className="heading-down">UKRAINE {this.props.items}</h1>
-              </div>
+
+      <div className="header-wrapper">
+        <div className="container">
+          <div className="main-wrapper">
+            <About/>
+            <div className="heading-wrapper">
+              <h3 className="heading-upper">EXPLORE THE WILD</h3>
+              <h1 className="heading-down">UKRAINE {this.props.items}</h1>
             </div>
           </div>
-          <SearchField/>
         </div>
-      </Router>
+        <SearchField/>
+      </div>
+
     );
   }
 }
