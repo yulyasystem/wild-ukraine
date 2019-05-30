@@ -2,12 +2,11 @@ import React from "react";
 import {SearchItem} from "./SearchItem";
 import {SearchButton} from "./SearchButton";
 
-
 export default class SearchField extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedItem: this.updateData
+      selectedItem: "Aktove"
     }
     this.updateData = this
       .updateData
@@ -19,7 +18,10 @@ export default class SearchField extends React.Component {
 
   }
   // updateData2 for 2nd component and check if spring and west is found show the
-  // аpropriate section
+  // аppropriate section
+  showResults() {
+    console.log("click");
+  }
 
   render() {
     return (
@@ -67,9 +69,9 @@ export default class SearchField extends React.Component {
               id: 10
             }
           ]}/>
-          
+
           <SearchButton title="Show Places"/>
-          
+           {console.log(this.state.selectedItem)}
         </div>
       </div>
     );

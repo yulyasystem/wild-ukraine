@@ -55,7 +55,8 @@ export default class SearchItem extends React.Component {
             onClick = {
               () => {
                 this.selectItem(item);
-                this.props.updateData(item.value);
+                this.props.updateData(this.state.selectedItem);
+                console.log(item.value);
               }
             }
 

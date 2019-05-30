@@ -7,17 +7,19 @@ export default class SearchResults extends React.Component {
 
   }
   render() {
+    
     return (
       <div className="header-wrapper">
         <div className="container">
           <div className="main-wrapper">
             <About/>
+            That is right path
             <div className="heading-wrapper"></div>
           </div>
         </div>
 
       </div>
-    // <div> HEYYYYYYYYYYYYYY</div>
+    
     );
   }
 }

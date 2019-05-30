@@ -5,6 +5,9 @@
   background-image: url(../assets/header-background.png);
   background-size: cover;
 }
+.search-button--heading >*:visited{
+  color:white;
+}
 
 .about-link {
   text-decoration: none;
